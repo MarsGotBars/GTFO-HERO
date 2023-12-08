@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root{
+  --primary: #1B1F20;
+  --terminal: #6FD662;
+  --font1: 'Inter', monospace;
+  --intro: 2s;
+  --intro-wait: 0.3s;
+  --goodbye: 1s;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--primary);
+  height: 100vh;
+  font-family: "Fira Code", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 400;
+  font-size: clamp(2rem, 10vw, 10rem);
+  color: var(--terminal);
+}
+
+div{
+  place-self: center;
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+
+main{
+  height: 100vh;
+  display: grid;
+}
+
+main > div:has(h1){
+  overflow: hidden;
+  position: relative;
+  background: var(--primary);
+  width: max-content;
+  animation: var(--goodbye) welcome-fade calc((var(--intro)*2) + var(--goodbye)) forwards ease-out
+;
+}
+
+main > div:has(h1)::after, main > div:has(h1)::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+main > div:has(h1)::after{
+  background: var(--primary);
+  animation: intro var(--intro) steps(9) var(--intro-wait) forwards;
+}
+
+
+div > h1 {
+  text-shadow: 5px 5px #191919;
+  animation: blink-out 3s calc(var(--intro) + .5s) forwards steps(10);
+}
+
+/* animations */
+@keyframes intro {
+  to{
+    left: 100%;
+  }
+}
+
+@keyframes blink-out {
+  /* ! too fast, should count amount of blinks; then separate the white bar and animation to another element */
+  /* 25%{
+    visibility: hidden;
+  }
+  35%{
+    visibility: visible;
+  }
+  40%{
+    visibility: hidden;
+    background-color: transparent;
+  }
+  41%{
+    background-color: white;
+  }
+  50%{
+    visibility: visible;
+  }
+  55%{
+    visibility: hidden;
+  }
+  56%{
+    background-color: white;
+  }
+  57%{
+    background-color: transparent;
+  }
+  65%{
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden;
+  } */
+}
+
+@keyframes welcome-fade{
+  100%{
+    visibility: hidden;
+  }
+}
+
+/* /animations */
