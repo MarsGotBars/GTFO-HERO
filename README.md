@@ -7,9 +7,11 @@
 
 - Added some default stuff (not everything) like a welcome screen.
   - should add an option (localstorage variable) that disables the welcome screen.
+  - [ ] Done
 
 - Welcome screen is still W.I.P. and will eventually have audio.
-  - With audio on page-visit it might be handy to have an audio slider on first visit.
+  - With audio on page-visit it might be handy to have an audio slider on first visit or an audio slider in a corner that is visible at all times.
+  - [ ] Done
 
 - contains a lot of animation work in CSS3, this is still W.I.P. as well.
 
@@ -23,6 +25,7 @@
 
 - Added scanlines across the page for a nice VHS effect and a separate css file with it.
   - Will make this optional in the future, as this can make small texts hard to read.
+  - [ ] Done
 
 -   Changed some of the text coloring to be the same as in GTFO.
 
