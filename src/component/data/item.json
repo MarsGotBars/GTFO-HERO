@@ -1,0 +1,88 @@
+{
+    "main":[
+        {
+            "id": 0,
+            "name": "shelling s49",
+            "alt": "pistol",
+            "image": ""   
+        },
+        {
+            "id": 1,
+            "name": "shelling nano",
+            "alt": "burst pistol",
+            "image": ""   
+        },
+        {
+            "id": 2,
+            "name": "bataldo 3rb",
+            "alt": "hel revolver",
+            "image": ""   
+        }
+    ],
+    "special":[
+        {
+            "id": 0,
+            "name": "heavy assault rifle",
+            "alt": "malatack hxc",
+            "image": ""   
+        },
+        {
+            "id": 1,
+            "name": "short rifle",
+            "alt": "drekker clr",
+            "image": ""   
+        },
+        {
+            "id": 2,
+            "name": "shotgun",
+            "alt": "buckland s870",
+            "image": ""   
+        }
+    ],
+    "tool":[
+        {
+            "id": 0,
+            "name": "bio-tracker",
+            "alt": "d-tek optron iv",
+            "image": ""   
+        },
+        {
+            "id": 1,
+            "name": "c-foam launcher",
+            "alt": "stalwart flow g2",
+            "image": ""   
+        },
+        {
+            "id": 2,
+            "name": "mine-deployer",
+            "alt": "krieger 04",
+            "image": ""   
+        }
+    ],
+    "melee":[
+        {
+            "id": 0,
+            "name": "sledgehammer",
+            "alt": "sledgehammer",
+            "image": ""   
+        },
+        {
+            "id": 1,
+            "name": "knife",
+            "alt": "knife",
+            "image": ""   
+        },
+        {
+            "id": 2,
+            "name": "bat",
+            "alt": "bat",
+            "image": ""   
+        },
+        {
+            "id": 3,
+            "name": "spear",
+            "alt": "spear",
+            "image": ""   
+        }
+    ]
+}

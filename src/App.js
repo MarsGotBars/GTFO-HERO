@@ -1,10 +1,14 @@
-import { Welcome } from './screens/Welcome';
-import { Randomization } from './screens/Randomization';
+import { Welcome } from './screen/Welcome';
+import { Randomization } from './screen/Randomization';
+import { Overlay } from './screen/Overlay';
+import { Randomized } from './component/Randomized';
 function App() {
   return (
     <main className="App">
+        <Overlay/>
         <Welcome/>
-        <Randomization/>
+        <Randomized/>
+        {/* <Randomization/> */}
     </main>
   );
 }
