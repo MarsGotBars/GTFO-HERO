@@ -22,40 +22,40 @@
     "special":[
         {
             "id": 0,
-            "name": "heavy assault rifle",
-            "alt": "malatack hxc",
+            "name": "malatack hxc",
+            "alt": "heavy assault rifle",
             "image": ""   
         },
         {
             "id": 1,
-            "name": "short rifle",
-            "alt": "drekker clr",
+            "name": "drekker clr",
+            "alt": "short rifle",
             "image": ""   
         },
         {
             "id": 2,
-            "name": "shotgun",
-            "alt": "buckland s870",
+            "name": "buckland s870",
+            "alt": "shotgun",
             "image": ""   
         }
     ],
     "tool":[
         {
             "id": 0,
-            "name": "bio-tracker",
-            "alt": "d-tek optron iv",
+            "name": "d-tek optron iv",
+            "alt": "bio tracker",
             "image": ""   
         },
         {
             "id": 1,
-            "name": "c-foam launcher",
-            "alt": "stalwart flow g2",
+            "name": "stalwart flow g2",
+            "alt": "c-foam launcher",
             "image": ""   
         },
         {
             "id": 2,
-            "name": "mine-deployer",
-            "alt": "krieger 04",
+            "name": "krieger 04",
+            "alt": "mine-deployer",
             "image": ""   
         }
     ],

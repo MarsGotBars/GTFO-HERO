@@ -23,6 +23,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 h1, h2, h3, h4, h5{
   font-weight: 400;
   color: var(--secondary);
@@ -89,7 +98,7 @@ div > h1 {
 
 @keyframes blink-out {
   /* ! too fast, should count amount of blinks; then separate the white bar and animation to another element */
-  /* 25%{
+  25%{
     visibility: hidden;
   }
   35%{
@@ -119,7 +128,7 @@ div > h1 {
   }
   100%{
     visibility: hidden;
-  } */
+  }
 }
 
 @keyframes welcome-fade{
@@ -129,3 +138,8 @@ div > h1 {
 }
 
 /* /animations */
+
+::selection {
+  color: whitesmoke;
+  background: var(--secondary);
+}
