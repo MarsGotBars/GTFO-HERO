@@ -1,7 +1,7 @@
-import style from "../styles/Overlay.css"
+import style from "../styles/overlay.module.css"
 export const Overlay = () => {
 
     return (
-        <div className={`scanlines`}></div>
+        <div className={`${style.scanlines}`}></div>
     )
 }

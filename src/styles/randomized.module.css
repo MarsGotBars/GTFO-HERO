@@ -1,0 +1,95 @@
+.screen>* {
+    grid-area: unset;
+}
+
+.screen {
+    width: 100%;
+    display: grid;
+    gap: 4rem 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    z-index: 0;
+}
+
+.screen h2 {
+    grid-area: auto / auto / auto / span 4;
+    place-self: center;
+}
+
+.screen div {
+    place-self: start;
+    justify-self: center;
+}
+
+.container {
+    width: 75%;
+    min-width: 2vw;
+}
+
+.container .title {
+    background-color: var(--white);
+    min-width: 100px;
+    max-width: 45%;
+    position: relative;
+    padding: 0.625rem 1rem 0 0.625rem;
+}
+
+.title h3{
+    background-color: var(--primary);
+}
+
+.container .title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--white);
+    width: 0;
+    height: 0;
+    border-top: 0.875rem solid var(--primary);
+    border-left: 1rem solid transparent;
+}
+
+.box {
+    min-width: 160px;
+    height: 12vw;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    background: var(--primary-alt);
+}
+
+.box>li:not(:last-child) {
+    border-bottom: 2px solid var(--secondary);
+}
+
+/* firefox scrollbar */
+.box>li {
+    border-right: 4px solid var(--white);
+}
+
+.box {
+    scrollbar-width: thin;
+    scrollbar-color: var(--white-alt) var(--primary-alt);
+}
+
+/* /firefox scrollbar */
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    color: red;
+    background-color: var(--primary-alt);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--white-alt);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--white);
+}
+
+/* /scrollbar */
+
+/* .item */

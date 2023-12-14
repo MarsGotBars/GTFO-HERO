@@ -2,19 +2,35 @@
 
 :root{
   --primary: #080508;
+  --primary-alt: #0a0f12;
   --secondary: #98bcd0;
+  --tertiary: #ff0000;
+  --tertiary-alt: #6f0000;
+  --white-alt: #a2c5d9;
+  --white: #ffffff;
   --font1: 'Inter', monospace;
   --intro: 2s;
   --intro-wait: 0.3s;
   --goodbye: 1s;
 }
 
+/* CSS reset */
 *{
   box-sizing: border-box;
   margin: 0;
 }
 
+ul{
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+}
+/* /CSS reset */
+
 body {
+  z-index: 0;
   color: var(--secondary);
   background: var(--primary);
   height: 100vh;
@@ -35,41 +51,59 @@ body {
 h1, h2, h3, h4, h5{
   font-weight: 400;
   color: var(--secondary);
+  position: relative;
 }
 
 h1{
   font-size: clamp(2rem, 10vw, 10rem);
 }
-
-h3{
-  color: red;
-  /* figure out a good size */
-  font-size: clamp(1rem, 4vw, 2rem);
+h2{
+  font-size: clamp(1.5rem, 5vw, 4rem);
 }
+h3{
+  color: var(--tertiary);
+  /* figure out a good size */
+  font-size: clamp(1rem, 1.125vw, 3rem);
+}
+ul{
+  width: max-content;
+  border: 0.275rem solid var(--white) ;
+}
+li{
+  width: minmax(auto, 17.5rem);
+  padding: 1rem 0.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+li:hover{
+  color: var(--white);
+  text-shadow: 1px -1.5px var(--tertiary-alt);
+}
+
 div{
   place-self: center;
   grid-area: 1 / 1 / 1 / 1;
 }
 
-
 main{
   height: 100vh;
   display: grid;
+  justify-items: center;
 }
 
-main > div:has(h1){
+main > div.welcome{
   display: grid;
   place-content: center;
   height: 100%;
   overflow: hidden;
   position: relative;
   background: var(--primary);
-  width: max-content;
-  animation: var(--goodbye) welcome-fade calc((var(--intro)*2) + var(--goodbye)) forwards ease-out
-;
+  width: 100vw;
+  animation: var(--goodbye) welcome-disappear calc((var(--intro)*2) + var(--goodbye)) forwards ease-out;
+  z-index: 1 !important;
 }
 
-main > div:has(h1)::after, main > div:has(h1)::after{
+main > div > h1::after{
   content: "";
   position: absolute;
   top: 0;
@@ -78,15 +112,14 @@ main > div:has(h1)::after, main > div:has(h1)::after{
   bottom: 0;
 }
 
-main > div:has(h1)::after{
+main > div > h1::after{
   background: var(--primary);
   animation: intro var(--intro) steps(9) var(--intro-wait) forwards;
 }
 
-
 div > h1 {
   text-shadow: 5px 3px rgba(153, 189, 209, 0.5);
-  animation: blink-out 3s calc(var(--intro) + .5s) forwards steps(10);
+  animation: blink-out calc(var(--intro) + var(--goodbye) ) calc(var(--intro) + .5s) forwards steps(10);
 }
 
 /* animations */
@@ -131,12 +164,11 @@ div > h1 {
   }
 }
 
-@keyframes welcome-fade{
+@keyframes welcome-disappear{
   100%{
     visibility: hidden;
   }
 }
-
 /* /animations */
 
 ::selection {

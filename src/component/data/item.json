@@ -17,7 +17,98 @@
             "name": "bataldo 3rb",
             "alt": "hel revolver",
             "image": ""   
+        },
+        {
+            "id": 3,
+            "name": "raptus treffen 2",
+            "alt": "machine pistol",
+            "image": ""   
+        },
+        {
+            "id": 4,
+            "name": "raptus steigro",
+            "alt": "hel autopistol",
+            "image": ""   
+        },
+        {
+            "id": 5,
+            "name": "accrat golok da",
+            "alt": "bullpup rifle",
+            "image": ""   
+        },
+        {
+            "id": 6,
+            "name": "van auken ltcs",
+            "alt": "smg",
+            "image": ""   
+        },
+        {
+            "id": 7,
+            "name": "accrat stb",
+            "alt": "pdw",
+            "image": ""   
+        },
+        {
+            "id": 8,
+            "name": "accrat nd6",
+            "alt": "heavy smg",
+            "image": ""   
+        },
+        {
+            "id": 9,
+            "name": "van aukenn cab f4",
+            "alt": "carbine",
+            "image": ""   
+        },
+        {
+            "id": 10,
+            "name": "tr22 hanaway",
+            "alt": "dmr",
+            "image": ""   
+        },
+        {
+            "id": 11,
+            "name": "hanaway psb",
+            "alt": "double tap rifle",
+            "image": ""   
+        },
+        {
+            "id": 12,
+            "name": "malatack lx",
+            "alt": "assault rifle",
+            "image": ""   
+        },
+        {
+            "id": 13,
+            "name": "malatack ch 4",
+            "alt": "burst rifle",
+            "image": ""   
+        },
+        {
+            "id": 14,
+            "name": "drekker pres mod 556",
+            "alt": "rifle",
+            "image": ""   
+        },
+        {
+            "id": 15,
+            "name": "buckland sbs iii",
+            "alt": "sawed-off shotgun",
+            "image": ""   
+        },
+        {
+            "id": 16,
+            "name": "bataldo j 300",
+            "alt": "hel shotgun",
+            "image": ""   
+        },
+        {
+            "id": 17,
+            "name": "bataldo custom k330",
+            "alt": "slug shotgun",
+            "image": ""   
         }
+        
     ],
     "special":[
         {
@@ -37,6 +128,84 @@
             "name": "buckland s870",
             "alt": "shotgun",
             "image": ""   
+        },
+        {
+            "id": 3,
+            "name": "buckland af6",
+            "alt": "combat shotgun",
+            "image": ""   
+        },
+        {
+            "id": 4,
+            "name": "drekker inex drei",
+            "alt": "scattergun",
+            "image": ""   
+        },
+        {
+            "id": 5,
+            "name": "buckland s870",
+            "alt": "shotgun",
+            "image": ""   
+        },
+        {
+            "id": 6,
+            "name": "buckland xdist2",
+            "alt": "choke mod shotgun",
+            "image": ""   
+        },
+        {
+            "id": 7,
+            "name": "mastaba r66",
+            "alt": "revolver",
+            "image": ""   
+        },
+        {
+            "id": 8,
+            "name": "techman arbalist v",
+            "alt": "machinegun",
+            "image": ""   
+        },
+        {
+            "id": 9,
+            "name": "techman veruta xii",
+            "alt": "machinegun",
+            "image": ""   
+        },
+        {
+            "id": 10,
+            "name": "techman klust 6",
+            "alt": "burst cannon",
+            "image": ""   
+        },
+        {
+            "id": 11,
+            "name": "omneco exp1",
+            "alt": "hel gun",
+            "image": ""   
+        },
+        {
+            "id": 12,
+            "name": "shelling arid 5",
+            "alt": "high caliber pistol",
+            "image": ""   
+        },
+        {
+            "id": 13,
+            "name": "drekker del p1",
+            "alt": "precision rifle",
+            "image": ""   
+        },
+        {
+            "id": 14,
+            "name": "köning pr 11",
+            "alt": "sniper",
+            "image": ""   
+        },
+        {
+            "id": 15,
+            "name": "omneco lrg",
+            "alt": "hel rifle",
+            "image": ""
         }
     ],
     "tool":[
@@ -56,6 +225,30 @@
             "id": 2,
             "name": "krieger 04",
             "alt": "mine-deployer",
+            "image": ""   
+        },
+        {
+            "id": 3,
+            "name": "mechatronic sgb3",
+            "alt": "burst sentry",
+            "image": ""   
+        },
+        {
+            "id": 4,
+            "name": "rad labs meduza",
+            "alt": "hel auto sentry",
+            "image": ""   
+        },
+        {
+            "id": 5,
+            "name": "autotek 51 rsg",
+            "alt": "sniper sentry",
+            "image": ""   
+        },
+        {
+            "id": 6,
+            "name": "mechatronic b5 lfr",
+            "alt": "shotgun sentry",
             "image": ""   
         }
     ],
