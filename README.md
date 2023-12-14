@@ -34,3 +34,19 @@
 - Changed selection color & background to fit the GTFO theme
 
 - Made the title unselectable
+
+### 0.2.0
+
+- Added all the data in item.json.
+
+- Added separate module for Randomized.js.
+
+- Made the boxes 1 to 1 as in GTFO, mostly responsive
+  - just need to wrap the boxes on smaller screen sizes.
+
+- Added some colors to :root for the overall theme.
+
+- Added booleans for welcome screen, localstorage key is next on the list for this.
+
+- Also added useEffect with timeout
+  - Will calculate the time for the animation to finish next time, this will remove the component on finish.
